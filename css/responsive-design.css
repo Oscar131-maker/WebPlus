@@ -1,0 +1,80 @@
+@media only screen and (max-width:798px) {
+  
+    /* Navegation Menu */
+
+    .btn-menu{
+       display: block;
+       position: absolute;
+       top: 15px;
+       right: 40px;
+       font-size: 30px;
+       color:#000;
+       cursor: pointer;
+   }
+   .menu .list-container{
+       position: fixed;
+       top: 60px;
+       left: -100%;
+       background:#fff;
+       width: 100%;
+       height: calc(100vh - 60px);
+       padding:70px;
+   }
+   .menu .list-container .lists{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   .menu .list-container .lists li a.active{
+       color:#1B9CFC;
+       background:none;
+   }
+   .menu .list-container .lists li{
+       margin:10px 0px;
+   }
+   .menu .list-container .lists li a{
+       font-size:21px;
+   }
+
+   /** Img Header **/
+   .img-header h2{
+       font-size: 40px;
+   }
+   .img-header hr{
+       width: 200px;
+   }  
+   .img-header p{
+       font-size: 18px;
+   }
+
+   /** Testimonies **/
+   .testimonies > h2{
+       font-size:30px;
+   }
+   .testimonies > p{
+       font-size: 17px;
+   }
+
+   /** Slideshow **/
+   .swiper-slide{
+       height: 800px !important;
+   }
+   .swiper-slide .slide-info{
+       height: 330px;
+   }
+   .swiper-slide .slide-info h2{
+       font-size:25px;
+   }
+   .swiper-slide .slide-info p{
+       font-size:17px;
+       line-height: 25px;
+   }
+
+   /** Footer **/
+    #footer p{
+        font-size:18px;
+        padding:10px;
+    }
+
+}

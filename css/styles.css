@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffff;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+/** Img Header **/
+#header{
+    width: 100%;
+    position: relative;
+}
+.img-header{
+    background: url(../images/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: soft-light;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.img-header h2{
+    font-size:70px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom:10px;
+}
+.img-header hr{
+    width: 500px;
+    height: 2px;
+    background:#fff;
+    border:none;
+}
+.img-header p{
+    font-size: 20px;
+    color:#fff;
+    margin:15px 0px;
+}
+
+/** Navegation Menu **/
+.menu{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border-bottom: 4px solid #1B9CFC;
+    background:#fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .logo-box{
+    margin-left: 40px;
+}
+.menu .logo-box h1{
+   font-size: 30px;
+   font-weight: normal;
+   color:#000;
+}
+.btn-menu{
+    display: none;
+}
+.menu .list-container{
+    margin-right:40px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.menu .list-container .lists li{
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+    margin:0px 10px;
+    border-radius: 5px;
+    padding:8px;
+    transition: 0.5s;
+}
+.menu .list-container .lists li a.active{
+    background:#1B9CFC;
+    color: #fff;
+}
+.menu .list-container .lists li a:hover{
+    background:#1B9CFC;
+    color: #fff;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/** Testimonies **/
+#main{
+    width: 100%;
+}
+
+.testimonies{
+    width:100%;
+    margin:100px 0px;
+}
+.testimonies > h2{
+    font-size: 35px;
+    font-weight: normal;
+    color:#000;
+    display: flex;
+    justify-content:center;
+}
+.testimonies > hr{
+    width: 50%;
+    height: 1px;
+    background:#000;
+    border:none;
+    margin:20px auto;
+}
+.testimonies > p{
+    width:85%;
+    margin:20px auto;
+    color:#000;
+    font-size: 19px;
+    line-height: 35px;
+    text-align: center;
+}
+
+/** Slideshow **/
+.swiper-container {
+    width: 85%;
+    height: 100%;
+    margin:100px auto;
+}
+.swiper-slide{
+    position: relative;
+    width:100%;
+    height: 600px !important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide .slide-info{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 205px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+}
+.swiper-slide .slide-info h2{
+    color:#fff;
+    font-size: 30px;
+    font-weight: normal;
+}
+.swiper-slide .slide-info hr{
+    width: 50%;
+    margin:5px auto;
+    border:none;
+    height: 1px;
+    background:#fff;
+}
+.swiper-slide .slide-info p{
+    width: 95%;
+    margin:10px auto;
+    color:#fff;
+    text-align: center;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/** Go Top **/
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: 100%;
+    width: 50px;
+    height: 50px;
+    background:#fff;
+    border:3px solid #1B9CFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 9999;
+}
+.go-top .icon-top{
+    font-size:20px;
+    color:#2C3A47;
+}
+.go-top:hover{
+    background:#1B9CFC;
+    border:3px solid #fff;
+}
+
+/** Footer **/
+#footer{
+    width: 100%;
+    height: 60px;
+    background:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer p{
+    color:#fff;
+    font-size:20px;
+}
